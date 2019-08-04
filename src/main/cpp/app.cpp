@@ -13,5 +13,18 @@ std::string mst::Greeter::greeting() {
 int main () {
     mst::Greeter greeter;
     std::cout << greeter.greeting() << std::endl;
+
+    int count = 10;
+    int& countRef = count;
+    auto myAuto = countRef;
+
+    countRef = 11;
+    std::cout << count << std::endl;
+
+    myAuto = 12;
+    count = 13;
+    int* sCount = &count;
+    std::cout << count << std::endl;
+    std::cout << sCount << std::endl;
     return 0;
 }

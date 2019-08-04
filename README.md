@@ -16,3 +16,6 @@ mst() {
   ./build/exe/main/debug/mst $@
 }
 ```
+
+## Rakefile
+😍
